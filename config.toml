@@ -1,0 +1,20 @@
+debug = true
+
+[chain]
+    # Parameters server address.
+    url = "http://localhost:47268/"
+
+    # Block submission URL.
+    submissionURL = "http://localhost:47268/blocks"
+
+    # Websocket server address.
+    wsURL = "ws://localhost:47268/events/ws"
+
+[miner]
+    # Amount of goroutines to use for hashing. It needs to be greater 
+    # than 1 and less than MAXCORES or it gets yeeted.
+    threads = 8
+
+    # What will be find inside each block. This should only be ASCII printable
+    # characters with the exception of backslash. The length must from 1-64.
+    comment = "kei0x"
